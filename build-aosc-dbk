@@ -1,0 +1,8 @@
+#!/bin/bash
+
+main() {
+  docker build --compress --pull --tag local/aosc-dbk:latest .
+}
+
+main "$@"
+

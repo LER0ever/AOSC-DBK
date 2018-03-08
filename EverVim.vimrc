@@ -20,3 +20,5 @@ let g:evervim_hybrid_linenumber = 1
 " 80 Column Warning
 " Shows a magenta line at column 81 only for those lines that exceeds 80
 let g:evervim_80_column_warning = 1
+
+let g:override_evervim_bundles = 1

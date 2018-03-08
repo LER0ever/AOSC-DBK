@@ -1,0 +1,17 @@
+image: docker:latest
+
+services:
+  - docker:dind
+
+stages:
+- build
+  
+build:
+  stage: build
+  script:
+    - docker build --compress --pull --tag local/aosc-dbk:latest .
+    - docker save -o aosc-dbk.tar local/aosc-dbk
+  artifacts:
+    paths:
+    - aosc-dbk.tar
+    expire_in: 1 week
