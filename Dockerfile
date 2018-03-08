@@ -3,7 +3,7 @@ MAINTAINER LER0ever (https://rongyi.blog)
 ENV HOSTNAME LER0ever-AOSC-BK
 
 RUN apt update && \
-    apt full-upgrade && \
+    apt full-upgrade
 
 COPY EverVim.vimrc /root/.EverVim.vimrc
 COPY EverVim.bundles /root/.EverVim.bundles
