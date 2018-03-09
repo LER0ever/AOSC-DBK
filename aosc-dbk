@@ -7,6 +7,8 @@ main() {
       --name "LER0ever-AOSC-BK" \
       --hostname "LER0ever-AOSC-BK" \
       --volume "$PWD":/var/lib/acbs/repo \
+      --volume "$PWD/../pkgs/os-amd64":/os-amd64 \
+      --volume "$PWD/../pkgs/os-noarch":/os-noarch \
       --volume ~/.ssh/id_rsa:/home/everette/.ssh/id_rsa \
       local/aosc-dbk "$@"
 }
