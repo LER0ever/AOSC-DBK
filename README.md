@@ -15,6 +15,12 @@ If you are looking for a dockerized development environment, please try [LER0eve
 ## Docker Hub
 This docker image is automatically built every night using Travis CI and cron job.
 
+## Usage
+- Copy the `aosc-dbk` script to `/usr/local/bin`
+- Navigate into an abbs tree
+- `aosc-dbk`
+
+
 ## Notice
 If you want to use this project as your packaging environment for whatever reason (which is highly unlikely),
 please use the following config to create a derivative in order to get rid of my personal info (email, git identity, etc.)

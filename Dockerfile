@@ -30,6 +30,6 @@ COPY zsh/void-mod.zsh-theme $HOME/.oh-my-zsh/custom/themes/
 COPY acbs/ab3cfg.sh /etc/autobuild/ab3cfg.sh
 
 # Default to abbs
-WORKDIR /var/lib/acbs/repo
+WORKDIR /workdir
 
 CMD [ "/bin/zsh" ]
