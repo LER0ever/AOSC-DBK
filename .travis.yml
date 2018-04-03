@@ -1,0 +1,11 @@
+language: generic
+sudo: required
+services:
+- docker
+install:
+- docker version
+script:
+- docker build --compress --pull --tag ler0ever/aosc-dbk .
+after_success:
+- '[ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ] && docker
+  login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD" && docker push "ler0ever/aosc-dbk"'
