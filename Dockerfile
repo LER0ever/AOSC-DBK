@@ -11,6 +11,8 @@ COPY locale/locale.gen /etc/locale.gen
 RUN apt update && \
     apt full-upgrade -y
 
+RUN apt install the-silver-searcher ctags fzf -y
+
 # EverVim minimal
 # With aosc.vim plugin installed by default
 COPY vim/EverVim.vimrc $HOME/.EverVim.vimrc
@@ -26,8 +28,13 @@ RUN apt install zsh thefuck -y && \
 COPY zsh/zshrc $HOME/.zshrc
 COPY zsh/void-mod.zsh-theme $HOME/.oh-my-zsh/custom/themes/
 
+# Git config
+COPY git/gitconfig $HOME/.gitconfig
+COPY git/gitignore_global $HOME/.gitignore_global
+
 # Autobuild config
 COPY acbs/ab3cfg.sh /etc/autobuild/ab3cfg.sh
+COPY acbs/forest.conf /etc/acbs/forest.conf
 
 # Default to abbs
 WORKDIR /workdir

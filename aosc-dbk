@@ -6,7 +6,6 @@ main() {
       --rm \
       --name "LER0ever-AOSC-DBK" \
       --hostname "LER0ever-AOSC-DBK" \
-      --volume "$PWD":/var/lib/acbs/repo \
       --volume "$PWD":/workdir \
       --volume "$PWD/../aosc-pkgs/os-amd64":/os-amd64 \
       --volume "$PWD/../aosc-pkgs/os-noarch":/os-noarch \
