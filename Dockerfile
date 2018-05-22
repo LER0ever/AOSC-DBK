@@ -1,6 +1,7 @@
 FROM aosc/aosc-os-buildkit:latest
 MAINTAINER LER0ever (https://rongyi.blog)
 ENV HOSTNAME LER0ever-AOSC-BK
+ENV DEBIAN_FRONTEND noninteractive
 ENV SHELL /bin/zsh
 ENV HOME /root
 
