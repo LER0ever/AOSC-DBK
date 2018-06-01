@@ -5,8 +5,11 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV SHELL /bin/zsh
 ENV HOME /root
 
-# STPD localegen
+# Workaround AOSC STPD LocaleGen
 COPY locale/locale.gen /etc/locale.gen
+
+# Workaround AOSC STPD DebConf
+COPY apt/force_confdef /etc/apt/apt.conf.d/force_confdef
 
 # Full upgrade
 RUN apt update && \

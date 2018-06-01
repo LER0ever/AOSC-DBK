@@ -88,7 +88,7 @@ zstyle ':completion:*' rehash true
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias v=nvim
-alias cslw="rdesktop -g 960x1080 -d CS.WISC.EDU -u rong -p - rd.cs.wisc.edu"
+alias ab="acbs-build"
 
 # Locale
 export LC_ALL=en_US.UTF-8
