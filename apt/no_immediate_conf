@@ -1,0 +1,2 @@
+APT::Immediate-Configure "false";
+APT::Force-LoopBreak "true";

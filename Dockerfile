@@ -10,6 +10,7 @@ COPY locale/locale.gen /etc/locale.gen
 
 # Workaround AOSC STPD DebConf
 COPY apt/force_confdef /etc/apt/apt.conf.d/force_confdef
+COPY apt/no_immediate_conf /etc/apt/apt.conf.d/no_immediate_conf
 
 # Full upgrade
 RUN apt update && \
