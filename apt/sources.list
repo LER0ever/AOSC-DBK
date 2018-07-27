@@ -1,0 +1,4 @@
+deb https://mirror.koddos.net/anthon/os-amd64/os3-dpkg /
+deb https://mirror.koddos.net/anthon/os-noarch/os3-dpkg /
+deb https://mirror.koddos.net/anthon/os-amd64/testing/os-amd64/os3-dpkg /
+deb https://mirror.koddos.net/anthon/os-noarch/testing/os-noarch/os3-dpkg /

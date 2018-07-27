@@ -12,6 +12,9 @@ COPY locale/locale.gen /etc/locale.gen
 COPY apt/force_confdef /etc/apt/apt.conf.d/force_confdef
 COPY apt/no_immediate_conf /etc/apt/apt.conf.d/no_immediate_conf
 
+# Enable Testing Repo
+COPY apt/sources.list /etc/apt/sources.list
+
 # Full upgrade
 RUN apt update && \
     apt full-upgrade -y
