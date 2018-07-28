@@ -14,6 +14,7 @@ COPY apt/no_immediate_conf /etc/apt/apt.conf.d/no_immediate_conf
 
 # Enable Testing Repo
 COPY apt/sources.list /etc/apt/sources.list
+RUN rm -f /var/lib/apt/gen/enabled
 
 # Full upgrade
 RUN apt update && \
